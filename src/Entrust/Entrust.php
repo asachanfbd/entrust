@@ -52,7 +52,7 @@ class Entrust
      *
      * @return bool
      */
-    public function can($permission, $requireAll = false)
+    public function may($permission, $requireAll = false)
     {
         if ($user = $this->user()) {
             return $user->can($permission, $requireAll);
